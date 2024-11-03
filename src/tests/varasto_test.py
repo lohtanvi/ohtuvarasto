@@ -63,6 +63,7 @@ class TestVarasto(unittest.TestCase):
     def test_lisays_negatiivinen_maara(self):
         self.varasto.lisaa_varastoon(-2)
 
+	# varastossa pitäisi olla tilaa 10
         self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 10)
 
     def test_konstruktori_negatiivinen_varasto(self):
