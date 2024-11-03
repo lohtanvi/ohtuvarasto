@@ -25,7 +25,7 @@ def main():
     print("Virhetilanteita:")
     print("Varasto(-100.0);")
     huono = Varasto(-100.0)
-    print(huonoakin huonompi)
+    print(huono)
 
     print("Varasto(100.0, -50.7)")
     huono = Varasto(100.0, -50.7)
