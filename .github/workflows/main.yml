@@ -26,5 +26,8 @@ jobs:
         run: poetry run coverage xml
       - name: Coverage report to Codecov
         uses: codecov/codecov-action@v4.0.1
+        with:
+          directory: /tmp/.scaffold-coverage-html
+          fail_ci_if_error: true
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
